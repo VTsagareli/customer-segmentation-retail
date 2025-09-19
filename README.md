@@ -31,7 +31,9 @@ Dataset: **1,000 customers**
 
 ## 3. Executive Summary  
 
-Our analysis of 1,000 retail customers shows that demographics such as age and gender have little influence on spending behavior or purchase frequency. Instead, income and engagement patterns define five clear customer segments, ranging from premium loyalists to price-sensitive occasional shoppers. Notably, a high-income but low-engagement segment represents untapped potential, while younger customers tend to purchase more frequently but with smaller basket sizes. These insights suggest targeted loyalty programs, personalized campaigns, and category-specific bundling strategies can increase overall customer lifetime value and retention.  
+
+Our analysis of 1,000 retail customers shows that demographics such as age and gender have little influence on spending behavior or purchase frequency. Instead, income and engagement patterns define five clear customer segments. These include high-income premium loyalists, a high-income but low-engagement group representing untapped potential, and lower-income shoppers who vary between frequent bargain hunters and occasional shoppers. These insights point to opportunities for targeted loyalty programs, personalized marketing, and category-specific bundling strategies to increase retention and customer lifetime value.  
+
 
 
 ---
