@@ -131,47 +131,41 @@ Our analysis of 1,000 retail customers shows that demographics such as age and g
 
 ## 4.5 Segmentation Results (K-Means)  
 - **Elbow Method for Optimal k:**  
-  Clear drop at k=4–5, with diminishing returns afterward. k=5 chosen for interpretability.
-
-<img width="700" height="466" alt="output_18_0" src="https://github.com/user-attachments/assets/5915db8d-3a45-4da5-9a5a-c882876d2996" />
-
+  Clear drop at k=4–5, with diminishing returns afterward. k=5 chosen for interpretability.  
+  Silhouette score confirmed k=5 provides reasonable separation.  
 
 - **Customer Segments (Income vs Spending Score, colored by cluster):**  
   Five actionable groups identified:  
 
-  1. **Premium Loyalists** (high income, high spending score)  
-     - High basket sizes and engagement.  
+  1. **High-Income High Engagement (Premium Loyalists)**  
+     - Wealthy, engaged, steady spenders.  
      - **Strategy:** Offer VIP perks, early access, and premium bundles.  
 
-  2. **Untapped Potential** (high income, low spending score)  
-     - Can afford more but low engagement.  
+  2. **High-Income Low Engagement (Untapped Potential)**  
+     - Wealthy but under-engaged; large growth opportunity.  
      - **Strategy:** Personalized campaigns, onboarding nudges, premium loyalty trials.  
 
-  3. **Core Steady** (mid income, mid–high spending score)  
-     - Reliable group, steady engagement.  
+  3. **Mid-Income Moderate Engagement (Core Steady)**  
+     - Broad middle group with reliable but average engagement.  
      - **Strategy:** Always-on campaigns, cross-sells, loyalty multipliers.  
 
-  4. **Value Enthusiasts** (low income, high spending score)  
-     - Frequent buyers, smaller baskets.  
-     - **Strategy:** Promote bundles, discounts, and coupons to grow basket size.  
+  4. **Low-Income High Engagement (Frequent Bargain Hunters)**  
+     - Lower-income but highly engaged, often in Electronics.  
+     - **Strategy:** Target with bundles, discounts, and loyalty rewards to grow basket size.  
 
-  5. **Budget Occasionals** (low income, low spending score)  
-     - Infrequent and price-sensitive.  
-     - **Strategy:** Target with seasonal promotions and reactivation campaigns.  
+  5. **Low-Income Low Engagement (Home & Garden Splurgers)**  
+     - Lower-income, sporadic spending, especially on Home & Garden.  
+     - **Strategy:** Use seasonal promotions and targeted reactivation campaigns.  
 
-- **Takeaway:** Demographics alone are weak predictors. **Income + behavior create meaningful, actionable segments**.
+- **Takeaway:** Demographics alone are weak predictors. **Income + behavior define meaningful, actionable segments.**
 
-<img width="671" height="543" alt="output_20_0" src="https://github.com/user-attachments/assets/f1929a07-d98f-4db4-b707-b75373b835bf" />
-  
-
-| Cluster Name                                   |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
-|:-----------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
+| Cluster Name                                    |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
+|:------------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
 | Low-Income Low Engagement (Home & Garden Splurgers) |   43.9 |      56,412 |              22.7 |                5.5 |                  26.6 |             504.7 | Home & Garden  |
 | High-Income Low Engagement (Untapped Potential) |   43.6 |     118,607 |              24.5 |                5.4 |                  26.3 |             478.4 | Electronics    |
 | Low-Income High Engagement (Frequent Bargain Hunters) |   44.2 |      54,228 |              77.3 |                5.5 |                  27.0 |             504.0 | Electronics    |
 | High-Income High Engagement (Premium Loyalists) |   45.0 |     126,166 |              80.1 |                5.5 |                  27.1 |             487.0 | Electronics    |
 | Mid-Income Moderate Engagement (Core Steady)    |   42.1 |      90,498 |              62.0 |                5.5 |                  25.9 |             487.6 | Sports         |
-
 
 
 ---
