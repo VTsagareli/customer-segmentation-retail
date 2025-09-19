@@ -195,11 +195,12 @@ Overall, these strategies highlight opportunities to increase **customer lifetim
 
 | Cluster Name                                   |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
 |:-----------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
-| Value Enthusiasts (Low Income, High Spending)  |   43.8915 |      56412   |              22.6792 |                5.5     |                  26.6415 |             504.709 | Home & Garden  |
-| Untapped Potential (High Income, Low Spending) |   43.5502 |     118607   |              24.5462 |                5.40964 |                  26.3494 |             478.383 | Electronics    |
-| Budget Occasionals (Low Income, Low Spending)  |   44.2093 |      54228.4 |              77.2884 |                5.49767 |                  26.9767 |             503.994 | Electronics    |
-| Premium Loyalists (High Income, High Spending) |   44.9763 |     126166   |              80.0769 |                5.49704 |                  27.0947 |             486.962 | Electronics    |
-| Core Steady (Mid Income, Mid Spending)         |   42.1161 |      90498.4 |              62.0323 |                5.45161 |                  25.8581 |             487.597 | Sports         |
+| Low-Income Low Engagement (Home & Garden Splurgers) |   43.9 |      56,412 |              22.7 |                5.5 |                  26.6 |             504.7 | Home & Garden  |
+| High-Income Low Engagement (Untapped Potential) |   43.6 |     118,607 |              24.5 |                5.4 |                  26.3 |             478.4 | Electronics    |
+| Low-Income High Engagement (Frequent Bargain Hunters) |   44.2 |      54,228 |              77.3 |                5.5 |                  27.0 |             504.0 | Electronics    |
+| High-Income High Engagement (Premium Loyalists) |   45.0 |     126,166 |              80.1 |                5.5 |                  27.1 |             487.0 | Electronics    |
+| Mid-Income Moderate Engagement (Core Steady)    |   42.1 |      90,498 |              62.0 |                5.5 |                  25.9 |             487.6 | Sports         |
+
 
 ---
 
