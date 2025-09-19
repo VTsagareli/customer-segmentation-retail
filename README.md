@@ -131,8 +131,6 @@ The analysis of 1,000 retail customers shows that demographics such as age and g
 
 ---
 
-<img width="671" height="543" alt="output_20_0" src="https://github.com/user-attachments/assets/294618d4-474f-4be1-bbcf-21da508f2e57" />
-
 
 ## 4.5 Segmentation Results (K-Means)  
 - **Elbow Method for Optimal k:**  
@@ -163,6 +161,9 @@ The analysis of 1,000 retail customers shows that demographics such as age and g
      - **Strategy:** Use seasonal promotions and targeted reactivation campaigns.  
 
 - **Takeaway:** Demographics alone are weak predictors. **Income + behavior define meaningful, actionable segments.**
+
+<img width="671" height="543" alt="output_20_0" src="https://github.com/user-attachments/assets/294618d4-474f-4be1-bbcf-21da508f2e57" />
+
 
 | Cluster Name                                    |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
 |:------------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
