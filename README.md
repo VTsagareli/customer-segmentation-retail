@@ -193,6 +193,13 @@ Based on the segmentation and behavioral insights, the following actions are rec
 
 Overall, these strategies highlight opportunities to increase **customer lifetime value**, improve **retention**, and capture **untapped revenue potential** through targeted marketing efforts.  
 
+| Cluster Name                                   |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
+|:-----------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
+| Value Enthusiasts (Low Income, High Spending)  |   43.8915 |      56412   |              22.6792 |                5.5     |                  26.6415 |             504.709 | Home & Garden  |
+| Untapped Potential (High Income, Low Spending) |   43.5502 |     118607   |              24.5462 |                5.40964 |                  26.3494 |             478.383 | Electronics    |
+| Budget Occasionals (Low Income, Low Spending)  |   44.2093 |      54228.4 |              77.2884 |                5.49767 |                  26.9767 |             503.994 | Electronics    |
+| Premium Loyalists (High Income, High Spending) |   44.9763 |     126166   |              80.0769 |                5.49704 |                  27.0947 |             486.962 | Electronics    |
+| Core Steady (Mid Income, Mid Spending)         |   42.1161 |      90498.4 |              62.0323 |                5.45161 |                  25.8581 |             487.597 | Sports         |
 
 ---
 
