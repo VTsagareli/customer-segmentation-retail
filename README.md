@@ -41,10 +41,12 @@ Dataset: **1,000 customers**
 - **Age Distribution (Customer Distribution by Age Group):**  
   Middle-aged (31–50) and Older (51–70) customers each account for ~37–38%, while Young (18–30) make up ~25–26%.  
   **Takeaway:** The customer base leans middle-aged/older, but value is not driven by age alone.  
+<img width="684" height="618" alt="output_7_0" src="https://github.com/user-attachments/assets/5e679b8d-1019-4381-a68b-08f16909fd79" />
 
 - **Gender Distribution:**  
   Male (~350), Other (~330), and Female (~315) are fairly balanced.  
   **Takeaway:** Avoid gender-only targeting; gender segmentation should be combined with behavioral or category data.  
+<img width="692" height="539" alt="output_11_0" src="https://github.com/user-attachments/assets/58c2abda-38d8-4300-91a0-a92cd5df486e" />
 
 ---
 
