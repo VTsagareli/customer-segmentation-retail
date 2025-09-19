@@ -30,8 +30,9 @@ Dataset: **1,000 customers**
 ---
 
 ## 3. Executive Summary  
-➡️ **Replace this with 3–4 sentences about your main findings.**  
-- Example: “Middle-aged customers form the largest share, but young customers (18–30) have the highest spending score and purchase frequency. High-income customers make larger individual purchases but aren’t always engaged overall. Clustering revealed 5 distinct customer groups with unique behaviors.”  
+
+Our analysis of 1,000 retail customers shows that demographics such as age and gender have little influence on spending behavior or purchase frequency. Instead, income and engagement patterns define five clear customer segments, ranging from premium loyalists to price-sensitive occasional shoppers. Notably, a high-income but low-engagement segment represents untapped potential, while younger customers tend to purchase more frequently but with smaller basket sizes. These insights suggest targeted loyalty programs, personalized campaigns, and category-specific bundling strategies can increase overall customer lifetime value and retention.  
+
 
 ---
 
