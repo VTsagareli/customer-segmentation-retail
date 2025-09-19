@@ -163,7 +163,16 @@ Our analysis of 1,000 retail customers shows that demographics such as age and g
 
 <img width="671" height="543" alt="output_20_0" src="https://github.com/user-attachments/assets/f1929a07-d98f-4db4-b707-b75373b835bf" />
   
-- **Next step:** Summarize clusters in a table with average age, income, frequency, last purchase, and top category to present to stakeholders.
+
+| Cluster Name                                   |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
+|:-----------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
+| Low-Income Low Engagement (Home & Garden Splurgers) |   43.9 |      56,412 |              22.7 |                5.5 |                  26.6 |             504.7 | Home & Garden  |
+| High-Income Low Engagement (Untapped Potential) |   43.6 |     118,607 |              24.5 |                5.4 |                  26.3 |             478.4 | Electronics    |
+| Low-Income High Engagement (Frequent Bargain Hunters) |   44.2 |      54,228 |              77.3 |                5.5 |                  27.0 |             504.0 | Electronics    |
+| High-Income High Engagement (Premium Loyalists) |   45.0 |     126,166 |              80.1 |                5.5 |                  27.1 |             487.0 | Electronics    |
+| Mid-Income Moderate Engagement (Core Steady)    |   42.1 |      90,498 |              62.0 |                5.5 |                  25.9 |             487.6 | Sports         |
+
+
 
 ---
 
@@ -192,15 +201,6 @@ Based on the segmentation and behavioral insights, the following actions are rec
    - Leverage seasonal campaigns, clearance sales, and reactivation offers to drive incremental purchases.  
 
 Overall, these strategies highlight opportunities to increase **customer lifetime value**, improve **retention**, and capture **untapped revenue potential** through targeted marketing efforts.  
-
-| Cluster Name                                   |   Avg Age |   Avg Income |   Avg Spending Score |   Avg Membership Years |   Avg Purchase Frequency |   Avg Last Purchase | Top Category   |
-|:-----------------------------------------------|----------:|-------------:|---------------------:|-----------------------:|-------------------------:|--------------------:|:---------------|
-| Low-Income Low Engagement (Home & Garden Splurgers) |   43.9 |      56,412 |              22.7 |                5.5 |                  26.6 |             504.7 | Home & Garden  |
-| High-Income Low Engagement (Untapped Potential) |   43.6 |     118,607 |              24.5 |                5.4 |                  26.3 |             478.4 | Electronics    |
-| Low-Income High Engagement (Frequent Bargain Hunters) |   44.2 |      54,228 |              77.3 |                5.5 |                  27.0 |             504.0 | Electronics    |
-| High-Income High Engagement (Premium Loyalists) |   45.0 |     126,166 |              80.1 |                5.5 |                  27.1 |             487.0 | Electronics    |
-| Mid-Income Moderate Engagement (Core Steady)    |   42.1 |      90,498 |              62.0 |                5.5 |                  25.9 |             487.6 | Sports         |
-
 
 ---
 
