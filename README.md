@@ -35,26 +35,97 @@ Dataset: **1,000 customers**
 
 ---
 
-## 4. Insights Deep Dive  
+# 4. Insights Deep Dive  
 
-### 4.1 Customer Demographics  
-- **Finding:** [Insert % breakdown of age groups]  
-- **So what?** [Insert why it matters]  
+## 4.1 Customer Demographics  
+- **Age Distribution (Customer Distribution by Age Group):**  
+  Middle-aged (31–50) and Older (51–70) customers each account for ~37–38%, while Young (18–30) make up ~25–26%.  
+  **Takeaway:** The customer base leans middle-aged/older, but value is not driven by age alone.  
 
-### 4.2 Behavioral Insights  
-- Age vs Spending Score → [insert what you found]  
-- Age vs Purchase Frequency → [insert what you found]  
-- Income vs Last Purchase Amount → [insert correlation/insight]  
+- **Gender Distribution:**  
+  Male (~350), Other (~330), and Female (~315) are fairly balanced.  
+  **Takeaway:** Avoid gender-only targeting; gender segmentation should be combined with behavioral or category data.  
 
-### 4.3 Category Preferences  
-- [Insert finding: e.g., Electronics have highest avg purchase, Groceries dominate volume]  
+---
 
-### 4.4 Segmentation Results (K-Means)  
-- Cluster 0 – Premium Loyalists: [your summary stats]  
-- Cluster 1 – Price-Sensitive: [your summary stats]  
-- Cluster 2 – Untapped Potential: [your summary stats]  
-- Cluster 3 – Young Frequent Shoppers: [your summary stats]  
-- Cluster 4 – Occasional Shoppers: [your summary stats]  
+## 4.2 Behavioral Insights  
+- **Average Spending Score by Age Group:**  
+  All age groups cluster around ~50–52, with middle-aged customers slightly higher.  
+  **Takeaway:** Age alone is not a strong driver of spending score.  
+
+- **Average Purchase Frequency by Age Group:**  
+  Young customers average ~27 purchases; middle-aged and older customers ~26. Differences are marginal.  
+  **Takeaway:** Age does not meaningfully predict purchase frequency.  
+
+- **Purchase Frequency Distribution by Age Group (Boxplot):**  
+  Wide, overlapping distributions with medians around 26–28 purchases.  
+  **Takeaway:** Within-group variance is high, so demographics are weak predictors. Use behavioral segmentation instead.  
+
+- **Income vs Spending Score (Scatter):**  
+  Shows no clear trend; spending scores are spread evenly across all income levels.  
+  **Takeaway:** High income does not guarantee high engagement. This highlights a **high-income, low-score “untapped” customer group**.  
+
+- **Age vs Spending Score (Scatter):**  
+  Flat cloud with no correlation.  
+  **Takeaway:** Age is not a predictor of spending score; segment customers based on behavior.  
+
+- **Distribution of Numerical Features (all histograms):**  
+  Features such as age, income, spending_score, membership_years, purchase_frequency, and last_purchase_amount appear broadly uniform with wide ranges.  
+  **Takeaway:** Expect weak simple correlations. Focus on clustering and engineered metrics like **CLV proxy = purchase_frequency × last_purchase_amount**.  
+
+---
+
+## 4.3 Category Preferences  
+- **Preferred Category Distribution:**  
+  Electronics is the most popular, followed by Sports, Home & Garden, and Groceries. Clothing is least preferred.  
+  **Takeaway:** Demand is diversified, but Electronics can anchor premium offers while Clothing may need bundling or discount strategies.  
+
+- **Average Spending Score by Category:**  
+  All categories are similar (~49–52), with Clothing slightly higher and Home & Garden slightly lower.  
+  **Takeaway:** Category preference alone does not strongly differentiate spending intensity. Combine category with purchase frequency and ticket size for better insights.  
+
+---
+
+## 4.4 Correlation Snapshot  
+- **Correlation Heatmap of Numerical Features:**  
+  All correlations are close to zero (between -0.05 and +0.07).  
+  **Takeaway:** No single variable drives another; clustering is appropriate.  
+  **Engineered features to improve segmentation:**  
+  - Customer Lifetime Value (CLV proxy): `purchase_frequency × last_purchase_amount`  
+  - Tenure buckets derived from `membership_years`  
+  - Monetary per visit: `last_purchase_amount` as basket proxy  
+
+---
+
+## 4.5 Segmentation Results (K-Means)  
+- **Elbow Method for Optimal k:**  
+  Clear drop at k=4–5, with diminishing returns afterward. k=5 chosen for interpretability.  
+
+- **Customer Segments (Income vs Spending Score, colored by cluster):**  
+  Five actionable groups identified:  
+
+  1. **Premium Loyalists** (high income, high spending score)  
+     - High basket sizes and engagement.  
+     - **Strategy:** Offer VIP perks, early access, and premium bundles.  
+
+  2. **Untapped Potential** (high income, low spending score)  
+     - Can afford more but low engagement.  
+     - **Strategy:** Personalized campaigns, onboarding nudges, premium loyalty trials.  
+
+  3. **Core Steady** (mid income, mid–high spending score)  
+     - Reliable group, steady engagement.  
+     - **Strategy:** Always-on campaigns, cross-sells, loyalty multipliers.  
+
+  4. **Value Enthusiasts** (low income, high spending score)  
+     - Frequent buyers, smaller baskets.  
+     - **Strategy:** Promote bundles, discounts, and coupons to grow basket size.  
+
+  5. **Budget Occasionals** (low income, low spending score)  
+     - Infrequent and price-sensitive.  
+     - **Strategy:** Target with seasonal promotions and reactivation campaigns.  
+
+- **Takeaway:** Demographics alone are weak predictors. **Income + behavior create meaningful, actionable segments**.  
+- **Next step:** Summarize clusters in a table with average age, income, frequency, last purchase, and top category to present to stakeholders.  
 
 ---
 
