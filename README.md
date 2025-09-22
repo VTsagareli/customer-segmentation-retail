@@ -135,7 +135,9 @@ The analysis of 1,000 retail customers shows that demographics such as age and g
 ## 4.5 Segmentation Results (K-Means)  
 - **Elbow Method for Optimal k:**  
   Clear drop at k=4–5, with diminishing returns afterward. k=5 chosen for interpretability.  
-  Silhouette score confirmed k=5 provides reasonable separation.  
+  Silhouette score confirmed k=5 provides reasonable separation.
+  
+<img width="700" height="466" alt="output_18_0" src="https://github.com/user-attachments/assets/d72207c6-bb4c-469f-bd55-410f21249009" />
 
 - **Customer Segments (Income vs Spending Score, colored by cluster):**  
   Five actionable groups identified:  
